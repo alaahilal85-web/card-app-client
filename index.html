@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card App MVP</title>
+    <style>
+      :root { font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; }
+      body { margin: 0; background: #0b0d12; color: #e7e9ee; }
+      .container { max-width: 980px; margin: 0 auto; padding: 24px; }
+      .card { background: #131722; border: 1px solid #202636; border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+      .row { display:flex; gap:12px; flex-wrap:wrap; }
+      input, select, button { padding:10px 12px; border-radius:8px; border:1px solid #30374a; background:#0f1320; color:#e7e9ee; }
+      button { cursor:pointer; }
+      .tabs { display:flex; gap:8px; margin: 12px 0 20px; }
+      .tab { padding: 10px 12px; border-radius: 8px; border:1px solid #30374a; background:#0f1320; }
+      .tab.active { background:#1a2236; border-color:#3b82f6; }
+      .muted { color:#9aa3b2; font-size: 12px; }
+      .title { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+      .badge { border:1px solid #3b82f6; color:#cfe1ff; padding:2px 8px; border-radius:999px; font-size:12px; }
+      .grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:12px; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
